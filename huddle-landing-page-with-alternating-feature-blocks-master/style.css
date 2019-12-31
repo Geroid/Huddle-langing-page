@@ -1,6 +1,7 @@
 body {
     background: url(images/bg-hero-desktop.svg);
     background-size: contain;
+    font-size: 18px;
 }
 
 .btn:link,
@@ -8,19 +9,50 @@ body {
     position: relative;
     top: 0;
     left: 0;
-    padding: 20px 40px;
+    padding: 13px 70px;
     border-radius: 35px;
 }
+.btn-try{
+    position: absolute;
+    left: 80%;
+    top: 5%;
+    padding: 13px 70px;
+    border-radius: 35px;
+}
+.leftpar{
+    left: 3%;
+}
+.rightpic {
+    float: right; /* Выравнивание по правому краю */
+    margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
+    width: 50%;
+    height: 50%;
+    padding-top: 5%;
+   }
+.rightmediapic {
+    float: right; /* Выравнивание по правому краю */
+    margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
+    width: 40%;
+    height: 40%;
+    padding-top: 5%;
+}
+  
 .btn-started{
     position: relative;
     padding: 30px 80px;
     border-radius: 50px;
+    left: 40%;
 }
 .btn-white{
-    background:#fff;
-    color:#000;
+    background:#FFF;
+    color:#00252E;
 }
 .btn-pink{
     background: #FF52BF;
     color: #fff;
+}
+.site-footer{
+    position: relative;
+    background-color: #00252E;
+    color: #EBFBFF;
 }
