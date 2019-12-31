@@ -1,0 +1,26 @@
+body {
+    background: url(images/bg-hero-desktop.svg);
+    background-size: contain;
+}
+
+.btn:link,
+.btn {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 20px 40px;
+    border-radius: 35px;
+}
+.btn-started{
+    position: relative;
+    padding: 30px 80px;
+    border-radius: 50px;
+}
+.btn-white{
+    background:#fff;
+    color:#000;
+}
+.btn-pink{
+    background: #FF52BF;
+    color: #fff;
+}
