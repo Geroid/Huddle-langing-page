@@ -1,7 +1,16 @@
+* {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+	height: 100%;
+}
 body {
     background: url(images/bg-hero-desktop.svg);
     background-size: contain;
     font-size: 18px;
+    height: 100%;
 }
 
 .btn:link,
@@ -36,12 +45,55 @@ body {
     height: 40%;
     padding-top: 5%;
 }
+.picsize{
+    width:100%;
+    height: 100%;
+}
+.media {
+    float: center; 
+    margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
+    border: 2px solid #fff;
+    box-shadow: darkgray;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 50%;
+}
+
+.media {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "img content";
+    margin-bottom: 3em;
+}
+.media2 {
+    float: center; /* Выравнивание по правому краю */
+    border: 2px solid #fff;
+    box-shadow: darkgray;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 50%;
+    text-align: center;
+}
+.media.flipped {
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: "content img";
+}
+
+.media .image {
+    grid-area: img;
+    background-color: #fff;
+}
+
+.media .text {
+    grid-area: content;
+    padding: 10px;
+    
+}
   
 .btn-started{
     position: relative;
     padding: 30px 80px;
     border-radius: 50px;
-    left: 40%;
 }
 .btn-white{
     background:#FFF;
