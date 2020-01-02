@@ -6,11 +6,24 @@
 html{
 	height: 100%;
 }
+h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+}
+h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+}
 body {
     background: url(images/bg-hero-desktop.svg);
     background-size: contain;
     font-size: 18px;
     height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400, 700;
 }
 
 .btn:link,
@@ -28,8 +41,9 @@ body {
     padding: 13px 70px;
     border-radius: 35px;
 }
-.leftpar{
-    left: 3%;
+.maintitle{
+    margin-left: 3%;
+    position: relative;
 }
 .rightpic {
     float: right; /* Выравнивание по правому краю */
@@ -37,6 +51,7 @@ body {
     width: 50%;
     height: 50%;
     padding-top: 5%;
+    margin-right: 3%;
    }
 .rightmediapic {
     float: right; /* Выравнивание по правому краю */
@@ -48,31 +63,40 @@ body {
 .picsize{
     width:100%;
     height: 100%;
+    padding-left: 2%;
 }
-.media {
-    float: center; 
+.media { 
+    position: relative;
     margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
     border: 2px solid #fff;
-    box-shadow: darkgray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
     border-radius: 10px;
     background-color: #fff;
     max-width: 50%;
 }
 
 .media {
+    left:25%;
+    top:25%;
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 3fr;
     grid-template-areas: "img content";
     margin-bottom: 3em;
 }
 .media2 {
-    float: center; /* Выравнивание по правому краю */
+    margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
     border: 2px solid #fff;
-    box-shadow: darkgray;
     border-radius: 10px;
     background-color: #fff;
     max-width: 50%;
-    text-align: center;
+}
+.media2{
+    left:25%;
+    top:25%;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    margin-bottom: 1em;
 }
 .media.flipped {
     grid-template-columns: 3fr 2fr;
